@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Certifications</h2>
+<ul>
+  {% for cert in certs %}
+  <li>{{ cert }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}

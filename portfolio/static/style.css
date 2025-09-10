@@ -1,0 +1,128 @@
+/* Colors */
+:root {
+  --base: #F5EFE6;
+  --upper: #6D94C5;
+  --accent: #CBDCEB;
+  --text: #333;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0; 
+  padding: 0;
+  background-color: #F5EFE6;
+  background-image: radial-gradient(#CBDCEB 1px, transparent 1px);
+  background-size: 25px 25px; /* spacing */
+  color: #333;
+}
+
+header {
+  background: var(--upper);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 160px;       
+  height: 200px;      
+  border-radius: 8px; 
+  margin-bottom: 10px;
+  border: 3px solid var(--accent);
+  object-fit: cover;  
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.15); 
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: var(--upper);
+}
+
+ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: var(--upper);
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: var(--upper);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background: #557bad; /* darker shade of your blue */
+}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Projects</h2>
+<div class="projects-grid">
+  {% for project in projects %}
+  <div class="project-card">
+    <h3>{{ project.name }}</h3>
+    <p>Click below to explore this project on GitHub.</p>
+    <a href="{{ github_base }}{{ project.repo }}" target="_blank" class="btn">View Project</a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

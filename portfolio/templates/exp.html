@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Experiences</h2>
+<ul>
+  {% for exp in experiences %}
+  <li>{{ exp }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
